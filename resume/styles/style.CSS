@@ -1,0 +1,64 @@
+*{font-family: verdana, arial, sans-serif;
+
+}
+nav ul{
+display: flex;
+list-style: none;
+height: 50px;
+border-radius: 10px;
+justify-content: space-between;
+padding-right: 3%;
+padding-top:20px;
+background-color: yellow;
+}
+
+.menu {
+text-decoration: none;
+}
+.menu:hover {
+text-decoration: underline;
+opacity: 0,85;
+}
+
+.img{
+margin-left: 5%; 	
+}
+.h1 {
+justify-content: center;
+margin-top: 100px;
+font-size: 30px;
+}
+.job_title {
+display: flex;
+justify-content: center;
+margin-top: 10px;
+
+font-size: 16px;	
+}
+.contacts{
+margin-left: 5%; 
+margin-top: 150px;
+font-style: italic;		
+}
+
+.profile {
+margin-left: 20%;
+margin-right: 20%; 
+margin-top: 150px;
+font-size: 16px;
+}
+
+.employment {
+margin-left: 20%;
+margin-right: 20%; 
+margin-top: 150px;
+font-size: 16px;
+}
+
+.education{
+margin-left: 20%;
+margin-right: 20%; 
+margin-top: 150px;
+font-size: 16px;
+margin-bottom: 10%;
+}
