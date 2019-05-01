@@ -7,12 +7,12 @@ box-sizing: border-box;
 img{
 display: block;
 }
-/*header*/
 
+/*header*/
 header{
 	font-family: arial, sans-serif;
 	font-size: 16px;
-	margin-left: 60%;
+	margin-left: 50%;
 }
 .header_links{
 	display: inline-block;
@@ -21,3 +21,21 @@ header{
 	margin-right: 20px;
 	text-decoration: none;
 }
+
+/*main block*/
+body
+.title{
+	font-size: 21px;
+}
+.main_pic{
+	margin-left: 50%;
+}
+
+/*footer*/
+footer{
+	display: inline-block;
+	margin-left: auto;
+	
+	margin-bottom: 30px;
+
+
