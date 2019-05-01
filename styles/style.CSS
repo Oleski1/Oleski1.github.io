@@ -26,6 +26,7 @@ header{
 body
 .title{
 	font-size: 21px;
+	margin-left: auto;
 }
 .main_pic{
 	margin-left: 50%;
