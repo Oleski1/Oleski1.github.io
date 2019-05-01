@@ -9,11 +9,12 @@ display: block;
 }
 
 /*header*/
-header
+header{
 	font-family: arial, sans-serif;
 	font-size: 16px;
 	margin-left: 50%;
 	display: inline-block;
+}
 .header_links {
 	width: 70px;
 	height: 30px;
@@ -29,8 +30,9 @@ header
 body
 .title{
 	font-size: 32px;
-	margin-left: 45%;
-	margin-top:20px;	
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 50px;	
 }
 .main_pic{
 	margin-left: 50%;
