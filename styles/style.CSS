@@ -30,8 +30,8 @@ header{
 body
 .title{
 	font-size: 32px;
-	margin-left: auto;
-	margin-right: auto;
+	margin-left: auto 0;
+	margin-right: auto 0;
 	margin-top: 50px;	
 }
 .main_pic{
