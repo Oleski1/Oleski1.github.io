@@ -30,9 +30,9 @@ header{
 /*main block*/
 body
 .title{
-	font-size: 21px;
-	margin-left: auto 0;
-	margin-right: auto 0;
+	font-size: 32px;
+	margin-left: auto;
+	margin-right: auto;
 	margin-top:20px;	
 }
 .main_pic{
