@@ -30,8 +30,7 @@ header{
 body
 .description{
 	font-size: 32px;
-	margin-left: 0 auto;
-	margin-right: 0 auto;
+	justify: center;
 	margin-top: 50px;	
 }
 .main_pic{
