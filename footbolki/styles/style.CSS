@@ -1,0 +1,202 @@
+*{
+	margin:0;
+	padding: 0;
+	box-sizing: border-box; 
+	font-family: Arial, sans-serif; 
+}
+img{
+	display: block;
+	}
+a{
+	font-size: 13px;
+	color: #0193e9;
+}
+
+.container{
+	border-top: 6px solid #fae851;
+	max-width: 960px;
+	margin: 0 auto;
+	padding: 10px 10px;
+}
+
+.row{
+	display: flex;
+	flex-wrap: wrap;
+	margin: 0 -10px;
+	
+}
+.item{
+	display: inline-block;
+	margin: 0 auto;
+	padding: 5px  20px;
+	text-align: center;
+}
+.wear-family{
+	font-family: Verdana;
+	color: #676767;
+	font-size: 10px;
+	margin-top: 5px;
+}
+.basket-wish{
+	width: 140px;
+	padding-left: 25px;
+	padding-right: 10px;
+	font-size: 13px;
+}
+.btn{
+	background-color: #fae851;
+	width: 117px;
+	height: 27px;
+	border-radius: 10px;
+	padding-left: 30px;
+	margin-right: 10px;
+	margin-top: 10px;
+	text-align: center;
+
+}
+.btn-1{
+	background-image: url(../img/sprite.png);
+	background-position: -51px -58px;
+}
+
+.btn-2{
+	background-image: url(../img/sprite.png);
+	background-position: -55px -122px;
+}
+
+.btn-social{
+	width: 31px;
+	height: 31px;
+	border-radius: 50px;
+	border: 1px solid #0193e9;
+	margin-top: 10px;
+	margin-right: 9px;
+	background-color: white;
+}
+.btn-3{
+	background-image: url(../img/sprite.png);
+	background-position: -59px -181px;	
+}
+
+.btn-4{
+	background-image: url(../img/sprite.png);
+	background-position: -58px -247px;
+}
+.btn-5{
+	background-image: url(../img/sprite.png);
+	background-position: -56px -309px;
+}
+
+.skype-icq-mail{
+	width: 90px;
+	height: 17px;
+	font-size: 13px;
+	padding: 0 10px;
+}
+.skype{
+	padding-left: 20px;
+	background-image: url(../img/sprite.png);
+	background-position: -62px -392px;
+}
+.icq{
+	padding-left: 20px;
+	background-image: url(../img/sprite.png);
+	background-position: -56px -309px;
+}
+.mail{
+	padding-left: 20px;
+	background-image: url(../img/sprite.png);
+	background-position: -56px -309px;
+}
+.phone-num{
+	font-family: Arial;
+	font-size: 16px;
+	color: #676767;
+}
+.line{
+	font-weight: bold;
+	font-style: solid;
+	margin-top:-10px;
+}
+.main-pic{
+	display: none;
+}
+
+.like-our-shop{
+	margin: 0 auto;
+	text-align: center;
+	font-weight: bold;
+	color: #0193e9;
+	padding-bottom: 10px;
+
+}
+.item-7{
+	font-size: 13px;
+	font-style:italic;
+	color: #8d8d8d;
+	text-align: center;
+	padding-bottom: 10px;
+}
+
+.item-8{
+	margin: 0 auto;
+	font-size: 13px;
+	color: #8d8d8d;
+	text-align: center;	
+	padding-bottom: 10px;
+}
+.head-banners{
+	display: none;
+}
+.designers-tshirts{
+	font-size:22px;	
+	font-weight: bold;
+	color: #0193e9;
+	margin: 0 -5px;
+	text-align: center;
+}
+.go-chapter{
+	font-size:13px;	
+	font-style: italic;
+	color: #0193e9;
+}
+.tshirt-lot{
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	margin: 10px auto;
+}
+.tshirt-descr-1{
+	font-size: 14px;
+	color: #0193e9;
+	font-weight: bold;
+}
+.tshirt-descr-2{
+	font-size: 14px;
+	color: #818181;
+}
+.price{
+	font-size: 14px;
+	font-weight: bold;
+	color: #818181;	
+}
+.tshirt-lot-disc{
+	border: 3px;
+	border-style: solid;
+	border-color: #0193e9;	
+}
+.btn-buy{
+	margin:0 auto;
+	font-size: 14px;
+	font-weight: bold;
+	color: #818181;	
+	background-image: url(../img/sprite.png);
+	background-position: -24px -1337px;
+}
+
+
+
+
+
+	
+}
