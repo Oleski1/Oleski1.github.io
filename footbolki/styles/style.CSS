@@ -55,12 +55,12 @@ a{
 
 }
 .btn-1{
-	background-image: url(../img/sprite.png);
+	background-image: url(../img1/sprite.png);
 	background-position: -51px -58px;
 }
 
 .btn-2{
-	background-image: url(../img/sprite.png);
+	background-image: url(../img1/sprite.png);
 	background-position: -55px -122px;
 }
 
@@ -74,16 +74,16 @@ a{
 	background-color: white;
 }
 .btn-3{
-	background-image: url(../img/sprite.png);
+	background-image: url(../img1/sprite.png);
 	background-position: -59px -181px;	
 }
 
 .btn-4{
-	background-image: url(../img/sprite.png);
+	background-image: url(../img1/sprite.png);
 	background-position: -58px -247px;
 }
 .btn-5{
-	background-image: url(../img/sprite.png);
+	background-image: url(../img1/sprite.png);
 	background-position: -56px -309px;
 }
 
@@ -95,17 +95,17 @@ a{
 }
 .skype{
 	padding-left: 20px;
-	background-image: url(../img/sprite.png);
+	background-image: url(../img1/sprite.png);
 	background-position: -62px -392px;
 }
 .icq{
 	padding-left: 20px;
-	background-image: url(../img/sprite.png);
+	background-image: url(../img1/sprite.png);
 	background-position: -56px -309px;
 }
 .mail{
 	padding-left: 20px;
-	background-image: url(../img/sprite.png);
+	background-image: url(../img1/sprite.png);
 	background-position: -56px -309px;
 }
 .phone-num{
@@ -190,7 +190,7 @@ a{
 	font-size: 14px;
 	font-weight: bold;
 	color: #818181;	
-	background-image: url(../img/sprite.png);
+	background-image: url(../img1/sprite.png);
 	background-position: -24px -1337px;
 }
 
