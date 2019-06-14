@@ -96,13 +96,13 @@ img{
 
 }
 .btn-1{
-	background-image: url(../img/sprite.png);
+	background-image: url(../img1/sprite.png);
 	background-position: -51px -58px;
 	font-weight: bold;
 }
 
 .btn-2{
-	background-image: url(../img/sprite.png);
+	background-image: url(../img1/sprite.png);
 	background-position: -55px -122px;
 	font-weight: bold;
 }
@@ -117,16 +117,16 @@ img{
 	background-color: white;
 }
 .btn-3{
-	background-image: url(../img/sprite.png);
+	background-image: url(../img1/sprite.png);
 	background-position: -59px -181px;	
 }
 
 .btn-4{
-	background-image: url(../img/sprite.png);
+	background-image: url(../img1/sprite.png);
 	background-position: -58px -247px;
 }
 .btn-5{
-	background-image: url(../img/sprite.png);
+	background-image: url(../img1/sprite.png);
 	background-position: -56px -309px;
 }
 
@@ -141,7 +141,7 @@ img{
 i{
 	width: 20px;
 	height: 20px;
-	background-image: url(../img/sprite.png);
+	background-image: url(../img1/sprite.png);
 }
 .skype{
 	padding-left: 20px;
@@ -254,7 +254,7 @@ i{
 	font-size: 14px;
 	font-weight: bold;
 	color: #818181;	
-	background-image: url(../img/sprite.png);
+	background-image: url(../img1/sprite.png);
 	background-position: -24px -1337px;
 }
 .avatar{
