@@ -20,13 +20,17 @@ img{
 	border-top: 6px solid #fae851;
 	max-width: 960px;
 	margin: 0 auto;
-	padding: 10px 10px;
+	padding: 0px 10px;
 }
 
 .row{
-	display: flex;
+	width: 100%;
+	height: auto;
+	display: block;
+	margin: 0 auto;
+	text-align: center;
 	flex-wrap: wrap;
-	margin: 0 -10px;
+	justify-content: space-between;
 }
 .row-1{
 	justify-content: space-between;
@@ -37,9 +41,8 @@ img{
 .item-2{
 	padding-right: 50px;
 }
-
 .item{
-	display: inline-block;
+	display: block;
 	text-align: center;
 	margin: 0 auto;
 	padding: 20px  20px;
@@ -86,6 +89,9 @@ img{
 	font-size: 13px;
 }
 .btn{
+	display: inline-block;
+	justify-content: space-between;
+	line-height: 200%;
 	background-color: #fae851;
 	width: 117px;
 	height: 27px;
@@ -94,20 +100,27 @@ img{
 	margin-right: 10px;
 	margin-top: 10px;
 	text-align: center;
-
+}
+.btn-top{
+	margin: 0 auto; 
+	justify-content: space-between;
 }
 .btn-1{
-	background-image: url(../img1/sprite.png);
+	background-image: url(../img/sprite.png);
 	background-position: -51px -58px;
 	font-weight: bold;
 }
 
 .btn-2{
-	background-image: url(../img1/sprite.png);
+	background-image: url(../img/sprite.png);
 	background-position: -55px -122px;
 	font-weight: bold;
 }
-
+.social-wrap{
+	margin: 0 auto;
+	justify-content: space-between;
+	padding: 20px;
+}
 .btn-social{
 	width: 31px;
 	height: 31px;
@@ -116,24 +129,23 @@ img{
 	margin-top: 10px;
 	margin-right: 9px;
 	background-color: white;
+	display: inline-block;
 }
 .btn-3{
-	background-image: url(../img1/sprite.png);
+	background-image: url(../img/sprite.png);
 	background-position: -59px -181px;	
 }
 
 .btn-4{
-	background-image: url(../img1/sprite.png);
+	background-image: url(../img/sprite.png);
 	background-position: -58px -247px;
 }
 .btn-5{
-	background-image: url(../img1/sprite.png);
+	background-image: url(../img/sprite.png);
 	background-position: -56px -309px;
 }
 
 .item-social{
-	display: block;
-	width: 95px;
 	height: 30px;
 	font-size: 13px;
 	text-align: center;
@@ -142,7 +154,7 @@ img{
 i{
 	width: 20px;
 	height: 20px;
-	background-image: url(../img1/sprite.png);
+	background-image: url(../img/sprite.png);
 }
 .skype{
 	padding-left: 20px;
@@ -157,16 +169,18 @@ i{
 	padding-left: 20px;
 	background-position: -61px -554px;
 }
-
+.line{
+	display: block;
+	text-align: center;
+}
 .line:after{
 	content: "";
 	border-bottom: 50px solid black;
-	
 }
 .basket{
 	background-position: -61px -554px;	
 }
-}
+
 .main-pic{
 	display: none;
 }
@@ -215,16 +229,15 @@ i{
 	margin: 0 -5px;
 	text-align: center;
 }
-.go-chapter{
-	font-size:13px;	
-	font-style: italic;
-	color: #0193e9;
-}
+
 .tshirt-lot{
 	display: flex;
 	flex-direction: column;
 	text-align: center;
 	margin: 10px auto;
+}
+.big-img{
+	height: auto;
 }
 .tshirt-descr-1{
 	font-size: 14px;
@@ -255,7 +268,7 @@ i{
 	font-size: 14px;
 	font-weight: bold;
 	color: #818181;	
-	background-image: url(../img1/sprite.png);
+	background-image: url(../img/sprite.png);
 	background-position: -24px -1337px;
 }
 .avatar{
