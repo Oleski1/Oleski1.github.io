@@ -26,7 +26,7 @@ img{
 .row{
 	width: 100%;
 	height: auto;
-	display: block;
+	display: flex;
 	margin: 0 auto;
 	text-align: center;
 	flex-wrap: wrap;
@@ -209,6 +209,7 @@ i{
 }
 .head-banners{
 	display: none;
+	
 }
 .sub-title{
 	justify-content: space-between;
@@ -231,10 +232,14 @@ i{
 }
 
 .tshirt-lot{
+	width: calc(100% / 12 * 9 - 30px);
 	display: flex;
 	flex-direction: column;
 	text-align: center;
 	margin: 10px auto;
+}
+.tshirt-lot-mid{
+width: calc(100% / 12 * 6 - 30px);	
 }
 .big-img{
 	height: auto;
@@ -264,6 +269,7 @@ i{
 	border-color: #0193e9;	
 }
 .btn-buy{
+	width: 100px;
 	margin:0 auto;
 	font-size: 14px;
 	font-weight: bold;
@@ -308,6 +314,22 @@ footer{
 }
 
 
+
+
+@media screen and (min-width: 960px){
+.row{
+	flex-direction: row;
+}
+.tshirt-lot{
+	width: calc(100% / 12 * 3 - 30px);	
+}	
+.tshirt-lot-mid{
+width: calc(100% / 12 * 2 - 30px);	
+}
+.head-banners{
+	display: block;
+}
+}
 
 
 
