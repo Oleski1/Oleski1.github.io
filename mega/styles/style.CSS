@@ -1,459 +1,249 @@
-*{
-	margin:0;
-	padding: 0;
-	box-sizing: border-box; 
-}
-img{
-	display: block;
-}
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta charset="utf-8">
+	<link href="styles/normalize.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+        <script src="https://use.fontawesome.com/0ca06f29a6.js"></script>
+        <link rel="shortcut icon" href="favicon.png" type="image/png">
+	<title>МЕГА - перший діловий журнал Прикарпаття</title>
+	<link rel="stylesheet" type="text/css" href="styles/style.CSS">
 
-header>.container{
-	flex-direction: row;
-}
-.container{
-padding: 0 ;
-display: flex;
-align-items: center;
-}
+</head>
 
-header{
-	display: flex;
-	height: 74px;
-	background-color: #283d6d;
-	
-}
-body{
-	margin: 0;
-}
-.row{
-	display: flex;
-	flex-direction: row;
-	justify-content: space-between;
-	padding-right: 0.5em;
-}
-.banner{
-	display: flex;
-	height: 3em;
-	width: auto;
-	padding: 0.5em;
-}
-.exchange{
-	display: flex;
-	justify-content: flex-end;
-}
-.PB{
-	display: inline-block; 
-	width: 60px;
-	height: 61px;
-	background-image: url(../img/PB.png);
-	text-align: center;	
-	margin: 0 auto;
-}
-.banner-special{
-	border-bottom: 1px solid #BCC1BD;
-	display: block;
-	text-align: center;
-	margin: 0 auto;
-	padding-bottom: 1em;
-}
+<body>
+<header>
+<div class="container">
+	<div class="brand">MEGA</div>
+                <div class="menu">
+    <div class="menu__icon">
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+    
+    <div class="menu__links">
+        <a class="menu__links-item">НОВИНИ</a>
+        <a class="menu__links-item">ІНТЕРВ'Ю</a>
+        <a class="menu__links-item">СТАТТІ</a>
+        <a class="menu__links-item">ЖУРНАЛ</a>
+        <a class="menu__links-item">ГАЛЕРЕЯ</a>
+        <a class="menu__links-item">ЕКСПЕРТИ</a>
+        <a class="menu__links-item">ПОДІЇ</a>
+        <a class="menu__links-item">КОНТАКТИ</a>
+    </div>
+  </div>
+  </div>
+</header>
+<div class="row" >
+<a  href=""> <img class="banner" src="img/buh.png"alt=banner></a>	
+<div class="exchange"><a class="pb"></a><div id="out"></div>
 
-.wrapper{
-	display: flex;
-	padding-left: 2em;
-}
-.wrap{
-	display: block;
-	width: 80%;
-	padding-right: 10%;
-	padding-left: 2%;
-}
-.picCenter{
-	display: flex;
-	flex-direction: row;
-	object-fit: cover; 
-	background-color: #efefef;
-    border: 1px solid #BCC1BD;
-    width: 100%;
-    height: auto;
-    text-decoration: none;
-}
-.sideBar{
-	display: flex;
-	flex-direction: column;
-	width: 20%
-}
-.asideBanner{
-	display: block;
-	padding-bottom: 1em;
-	padding-right: 2em;
-}
-.newsWrap{
-	display: flex;
-	flex-direction: row;
+<script>function success(data){
 
-}
-.news{
-	display: flex;
-	flex-direction: column;
-	padding: 0.5em;
-	
-}
-.brand{
+  data = data.find(e => e.ccy == "USD" && e.base_ccy == "UAH");
 
-	padding-left: 20px;
-	font-size: 2em;
-	color: #fff;
-}
-nav{
-	display: none;
-}
+  document.querySelector("#out").innerHTML = `Доллар США <br>Купівля:  ${data.buy}<br>Продаж: ${data.sale}`
 
-.menu {
-    text-align: right;
-    width: 84vw;
-}
+}</script>
 
-.menu__icon {
-   display: none;
-   width: 45px;
-   height: 35px;
-   position: relative;
-   cursor: pointer;
-}
+<script src="https://api.privatbank.ua/p24api/pubinfo?jsonp=success&exchange&coursid=5"></script>
+</div>	
+</div>
+<div class="banner-special">
+<div class="link"><a class="link" href=""><i class="euFlag"></i></a></div>
+<div class="link"><a class="link" href="#"><p>спецпроект з ЄС:</p><p>будуємо бізнес разом</a></p></div>	
+</div>
+<div class="wrapper">
+<div class="sideBar">
+<a class="asideBanner" href="https://www.flyuia.com/ua/ua/home"> <img class="newsPic" src="img/Spain.jpg"></a>
+<a class="asideBanner" href="https://www.flyuia.com/ua/ua/home"> <img class="newsPic" src="img/mapForBusiness.png"></a>
+<a class="asideBanner" href="http://mega.if.ua/arhiv.php"> <div class="titlePostLeft">ВИПУСК №20</div><img class="newsPic" src="img/magazine.jpg"></a>
+</div>
+<div class="wrap">
+<div class="centerPost">
+<h2>новина тижня. вибір редакції.</h2>
+<div class="date">24.06.2019</div>
+<div class="titlePostCenter">10 віртуальних туристичних маршрутів створять на Івано-Франківщині</div>
+<a class="picCenter" href="http://mega.if.ua/view.php?id=3271"><img class="picCenter" src="img/stone.png">
+<span class="descPostCenter">Десять віртуальних турів для мандрівників створять в Івано-Франківській області за сприяння фахівців Google. Про це повідомив начальник управління туризму Івано-Франківської обласної державної адміністрації Віталій Передерко на своїй сторінці у соціальній мережі Facebook.</span>	
+</a>	
+</div>
+<div class="newsWrap">
+	<div class="news">
+<div class="postsLeft">
+<a href="http://mega.if.ua/view.php?id=3272"><div class="titlePostLeft">НОВИНИ НА ПРИКАРПАТТІ</div></a>
+<div class="date">24.06.19</div>
+<a  href="http://mega.if.ua/view.php?id=3272"><img class="newsPicLeft" src="img/frankivsk.jpg">
+<div class="titlePost">Івано-Франківськ иоже увійти до клубу ідеальних міст Європи</div>	
+</div>
+<div class="descPost">
+	Місто Станіславів закладене на засадах, відомої в XVI-XVIII ст. європейської концепції ідеальних міст. Серед таких міст: Алба-Юлія (Румунія), Алмейда (Португалія), Неф-Брізах (Франція), Леополдов (Словакія), Замостя, Ченстохова (Польща), Жовква, Броди (Україна), Пальманова (Італія) та інші міста Європи.
+</div>
+</a>
+<div class="postsLeft">
+<div class="date">24.06.19</div>
+<a  href="http://mega.if.ua/view.php?id=3272"><img class="newsPicLeft" src="img/toronto.jpg">
+<div class="titlePost">Івано-Франківськ иоже увійти до клубу ідеальних міст Європи</div>	
+</div>
+<div class="descPost">
+	Місто Станіславів закладене на засадах, відомої в XVI-XVIII ст. європейської концепції ідеальних міст. Серед таких міст: Алба-Юлія (Румунія), Алмейда (Португалія), Неф-Брізах (Франція), Леополдов (Словакія), Замостя, Ченстохова (Польща), Жовква, Броди (Україна), Пальманова (Італія) та інші міста Європи.
+</div>
+</a>
+<div class="postsLeft">
+<div class="date">24.06.19</div>
+<a  href="http://mega.if.ua/view.php?id=3272"><img class="newsPicLeft" src="img/snail.jpg">
+<div class="titlePost">Івано-Франківськ иоже увійти до клубу ідеальних міст Європи</div>	
+</div>
+<div class="descPost">
+	Місто Станіславів закладене на засадах, відомої в XVI-XVIII ст. європейської концепції ідеальних міст. Серед таких міст: Алба-Юлія (Румунія), Алмейда (Португалія), Неф-Брізах (Франція), Леополдов (Словакія), Замостя, Ченстохова (Польща), Жовква, Броди (Україна), Пальманова (Італія) та інші міста Європи.
+</div>
+</a>
+</div>
+<div class="news">
+<div class="postsLeft">
+<a href="http://mega.if.ua/view.php?id=3272"><div class="titlePostLeft">НОВИНИ В УКРАЇНІ</div></a>
+<div class="date">24.06.19</div>
+<a  href="http://mega.if.ua/view.php?id=3272"><img class="newsPicLeft" src="img/cows.jpg">
+<div class="titlePost">Івано-Франківськ иоже увійти до клубу ідеальних міст Європи</div>	
+</div>
+<div class="descPost">
+	Місто Станіславів закладене на засадах, відомої в XVI-XVIII ст. європейської концепції ідеальних міст. Серед таких міст: Алба-Юлія (Румунія), Алмейда (Португалія), Неф-Брізах (Франція), Леополдов (Словакія), Замостя, Ченстохова (Польща), Жовква, Броди (Україна), Пальманова (Італія) та інші міста Європи.
+</div>
+</a>
+<div class="postsLeft">
+<div class="date">24.06.19</div>
+<a  href="http://mega.if.ua/view.php?id=3272"><img class="newsPicLeft" src="img/agro.jpg">
+<div class="titlePost">Івано-Франківськ иоже увійти до клубу ідеальних міст Європи</div>	
+</div>
+<div class="descPost">
+	Місто Станіславів закладене на засадах, відомої в XVI-XVIII ст. європейської концепції ідеальних міст. Серед таких міст: Алба-Юлія (Румунія), Алмейда (Португалія), Неф-Брізах (Франція), Леополдов (Словакія), Замостя, Ченстохова (Польща), Жовква, Броди (Україна), Пальманова (Італія) та інші міста Європи.
+</div>
+</a>
+<div class="postsLeft">
+<div class="date">24.06.19</div>
+<a  href="http://mega.if.ua/view.php?id=3272"><img class="newsPicLeft" src="img/frankivsk.jpg">
+<div class="titlePost">Івано-Франківськ може увійти до клубу ідеальних міст Європи</div>	
+</div>
+<div class="descPost">
+	Місто Станіславів закладене на засадах, відомої в XVI-XVIII ст. європейської концепції ідеальних міст. Серед таких міст: Алба-Юлія (Румунія), Алмейда (Португалія), Неф-Брізах (Франція), Леополдов (Словакія), Замостя, Ченстохова (Польща), Жовква, Броди (Україна), Пальманова (Італія) та інші міста Європи.
+</div>
+</a>
+</div>
+</div>
+</div>
+</div>
+<div class="central">
+<h2>ЕКСПЕРТИ</h2>
+</a>
+<div class="postsLeft">
+<div class="date">24.06.19</div>
+<a  href="http://mega.if.ua/view.php?id=3272"><img class="newsPicLeft" src="img/artysh.jpg">
+<div class="titlePost">Івано-Франківськ иоже увійти до клубу ідеальних міст Європи</div>	
+</div>
+<div class="descPost">
+	Місто Станіславів закладене на засадах, відомої в XVI-XVIII ст. європейської концепції ідеальних міст. Серед таких міст: Алба-Юлія (Румунія), Алмейда (Португалія), Неф-Брізах (Франція), Леополдов (Словакія), Замостя, Ченстохова (Польща), Жовква, Броди (Україна), Пальманова (Італія) та інші міста Європи.
+</div>
+</a>
+</div>
+<div class="central">
+<h2>ІНТЕРВ'Ю</h2>
+</a>
+<div class="postsLeft">
+<div class="date">24.06.19</div>
+<a  href="http://mega.if.ua/view.php?id=3272"><img class="newsPicLeft" src="img/singapore.jpg">
+<div class="titlePost">Івано-Франківськ може увійти до клубу ідеальних міст Європи</div>	
+</div>
+<div class="descPost">
+	Місто Станіславів закладене на засадах, відомої в XVI-XVIII ст. європейської концепції ідеальних міст. Серед таких міст: Алба-Юлія (Румунія), Алмейда (Португалія), Неф-Брізах (Франція), Леополдов (Словакія), Замостя, Ченстохова (Польща), Жовква, Броди (Україна), Пальманова (Італія) та інші міста Європи.
+</div>
+</a>
+</div>
+</div>
+<div class="downsideWrap">
+		
+	<div class="itemDownside">
+<h2>СПЕЦПРОЕКТ З ПРЕДСТАВНИЦТВОМ ЄС: БУДУЄМО БІЗНЕС РАЗОМ</h2>
+</a>
+<div class="postsLeft">
+<div class="date">24.06.19</div>
+<a  href="http://mega.if.ua/view.php?id=3272"><img class="newsPicLeft" src="img/promprylad.jpg">
+<div class="titlePost">Івано-Франківськ иоже увійти до клубу ідеальних міст Європи</div>	
+</div>
+<div class="descPost">
+	Місто Станіславів закладене на засадах, відомої в XVI-XVIII ст. європейської концепції ідеальних міст. Серед таких міст: Алба-Юлія (Румунія), Алмейда (Португалія), Неф-Брізах (Франція), Леополдов (Словакія), Замостя, Ченстохова (Польща), Жовква, Броди (Україна), Пальманова (Італія) та інші міста Європи.
+</div>
+</a>
+</div>
+<div class="itemDownside">
+<h2>СПЕЦПРОЕКТ:ЗРОБЛЕНО НА <p>ПРИКАРПАТТІ</p></h2>
+</a>
+<div class="postsLeft downsideCenter">
+<div class="date">24.06.19</div>
+<a  href="http://mega.if.ua/view.php?id=3272"><img class="newsPicLeft" src="img/mushrooms.jpg">
+<div class="titlePost">Івано-Франківськ иоже увійти до клубу ідеальних міст Європи</div>	
+</div>
+<div class="descPost">
+	Місто Станіславів закладене на засадах, відомої в XVI-XVIII ст. європейської концепції ідеальних міст. Серед таких міст: Алба-Юлія (Румунія), Алмейда (Португалія), Неф-Брізах (Франція), Леополдов (Словакія), Замостя, Ченстохова (Польща), Жовква, Броди (Україна), Пальманова (Італія) та інші міста Європи.
+</div>
+</a>
+</div>
+</div>
+</div>
+<h2>СТАТТІ</h2>
+<div class="lowerWrap">
+<div class=" downsideRight">
+<div class="date">24.06.19</div>
+<a  href="http://mega.if.ua/view.php?id=3272"><img class="newsPicLeft" src="img/toronto.jpg">
+<div class="titlePost">Івано-Франківськ иоже увійти до клубу ідеальних міст Європи</div>	
 
-.menu__icon span {
-  display: block;
-  position: absolute;
-  height: 5px;
-  width: 100%;
-  background: #fff;
-  border-radius: 9px;
-  opacity: 1;
-  left: 0;
-  transform: rotate(0deg);
-  transition: .25s ease-in-out;
-}
+<div class="descPost">
+	Місто Станіславів закладене на засадах, відомої в XVI-XVIII ст. європейської концепції ідеальних міст. 
+</div>
+</div>
+</a>
 
-.menu__icon span:nth-child(1) {
-  top: 0px;
-}
+<div class=" downsideRight">
+<div class="date">24.06.19</div>
+<a  href="http://mega.if.ua/view.php?id=3272"><img class="newsPicLeft" src="img/snail.jpg">
+<div class="titlePost">Івано-Франківськ иоже увійти до клубу ідеальних міст Європи</div>	
 
-.menu__icon span:nth-child(2), .menu__icon span:nth-child(3) {
-  top: 13px;
-}
+<div class="descPost">
+	Місто Станіславів закладене на засадах, відомої в XVI-XVIII ст. європейської концепції ідеальних міст. 
+</div>
+</div>
+</a>
 
-.menu__icon span:nth-child(4) {
-  top: 26px;
- }
+<div class=" downsideRight">
+<div class="date">24.06.19</div>
+<a  href="http://mega.if.ua/view.php?id=3272"><img class="newsPicLeft" src="img/cows.jpg">
+<div class="titlePost">Івано-Франківськ иоже увійти до клубу ідеальних міст Європи</div>	
 
-.menu__links-item {
-    display: inline-block;
-    color: #b3c1d4;
-    font-family: Arial;
-    font-size: 14px;
-    line-height: 30px;
-    padding: 0 10px;
-    text-transform: uppercase;
-    text-decoration: none;
-    cursor: pointer;
-}
+<div class="descPost">
+	Місто Станіславів закладене на засадах, відомої в XVI-XVIII ст. європейської концепції ідеальних міст. 
+</div>
+</div>
+</a>
 
-.menu__links-item:hover {
-    text-decoration: underline;
-}
+<div class="postsLeft downsideRight">
+<div class="date">24.06.19</div>
+<a  href="http://mega.if.ua/view.php?id=3272"><img class="newsPicLeft" src="img/kalabuha.jpg">
+<div class="titlePost">Івано-Франківськ иоже увійти до клубу ідеальних міст Європи</div>	
 
-.menu.menu_state_open .menu__icon span:nth-child(1) {
-  top: 18px;
-  width: 0%;
-  left: 50%;
-}
+<div class="descPost">
+	Місто Станіславів закладене на засадах, відомої в XVI-XVIII ст. європейської концепції ідеальних міст. 
+</div>
+</div>
+</a>
+</div>
 
-.menu.menu_state_open .menu__icon span:nth-child(2) {
-  transform: rotate(45deg);
-}
+<a href="https://www.facebook.com/megaifua/" >Вподобати сторінку y Facebook</a>
 
-.menu.menu_state_open  .menu__icon span:nth-child(3) {
-  transform: rotate(-45deg);
-}
-
-.menu.menu_state_open  .menu__icon span:nth-child(4) {
-  top: 18px;
-  width: 0%;
-  left: 50%;
-}
-
-.menu.menu_state_open .menu__links {
-  display: block;  
-}
-
-a{
-	text-decoration: none;
-}
-.euFlag{
-	display: inline-block; 
-	width: 50px;
-	height: 32px;
-	background-image: url(../img/iconEU.png);
-	text-align: center;	
-	margin: 0 auto;
-}
-.link{
-	display: inline-block;
-	font-size: 20px;
-	color: #283d6d;
-	text-decoration: none;
-	text-transform: capitalize;
-	text-align: center;
-	font-weight: bold;
-	text-align: center;
-	margin: 0 auto;
-}
-
-.h1, .h2, .h3, h1, h2, h3 {
-    margin-top: 20px;
-    margin-bottom: 10px;
-}
-h2{
-	font-family: verdana;
-    font-size: 17px;
-    text-transform: uppercase;
-    padding-bottom: 3px;
-    line-height: 28px;
-    padding-top: 3px;
-    text-align: center;
-    text-decoration: none;
-    font-weight: bold;
-    background: #283d6d;
-    letter-spacing: 2px;
-    color: #fff;
-    border-radius: 10px;
-}
-.date {
-    position: relative;
-    float: right;
-    padding-right: 4px;
-    padding-top: 2px;
-    font-family: verdana;
-    font-size: 10px;
-    color: #283d6d;
-    font-weight: bold;
-}
-.titlePostCenter{
-	text-align: left;
-    color: #283d6d;
-    font-family: verdana;
-    font-size: 20px;
-    font-weight: bold;
-    padding: 5px 10px 0px 10px;
-    text-decoration: none;
-}
-.newsPic{
-	display: block;
-	object-fit: cover; 
-	background-color: white;
-    border: 1px solid #BCC1BD;
-    width: 100%;
-    height: auto;
-    overflow: hidden;
-    text-decoration: none;
-}
-.descPostCenter{
-
-	text-align: left;
-    color: black;
-    font-family: verdana;
-    font-size: 14px;
-    line-height: 26px;
-    padding: 10px 10px;
-}
-.postsLeft{
-	padding-top: 20px;
-    padding-bottom: 10px;
-}
-.titlePostLeft{
-   text-align: center;
-    color: #283d6d;
-    font-family: verdana;
-   	font-size: 16px;
-    padding: 10px 0px 20px 0px;
-    font-weight: bold;
-}
-.newsPicLeft{
-	display: block;
-	object-fit: cover; 
-	background-color: white;
-    border: 4px solid #BCC1BD;
-    width: 100%;
-    height: auto;
-    overflow: hidden;
-    text-decoration: none;
-}
-.titlePost{
-    color: black;
-    font-family: verdana;
-    font-size: 13px;
-    padding-right: 4px;
-    font-weight: bold;
-    text-align: center;
-    padding-top: 10px;
-    padding-bottom: 15px;
-    line-height: 17px;
-}
-.descPost{
-	text-align: left;
-    color: black;
-    font-family: verdana;
-    font-size: 12px;
-    line-height: 20px;
-    padding: 8px;
-    text-decoration: none;
-}
-.central{
-	display: block;
-	width: 100%;
-	padding: 5% 25%;
-	
-}
-.downsideWrap{
-display: flex;
-width: 100%;
-padding: 0 5%;
-}
-.itemDownside{
-	display: flex;
-	flex-direction: column;
-	padding: 0 1em;
-}
-.downsideLeft{
-	padding-top: 0.28em;
-	padding-bottom: 10px;
-}
-.downsideCenter{
-	padding-top: 1.3em;
-}
-.lowerWrap{
-	display: flex;
-	flex-direction: row;
-}
-.downsideRight{
-	display: flex;
-	flex-direction: column;
-	height: auto;
-	padding: 1em;
-}
-footer{
-	margin: 0 auto;
-	font-family: verdana;
-	font-size: 12px;
-    line-height: 75px;
-    color: white;
-	display: flex;
-	height: 74px;
-	width: 100%;
-	background-color: #283d6d;
-	text-align: center;
-}
-.footerDescr{
-	text-align: center;
-}
-
-
-@media screen and (max-width: 870px) {
-  header{
-  	border-radius: 0px;
-  }
-  .row{
-  	display: flex;
-  	flex-direction: column;
-  }
-  .menu__icon{
-    display: inline-block;
-  }
-  
-    .menu__links {
-    position: fixed;
-    display: none;
-    top: 0;
-    right: 0;
-    left: 0;
-    margin-top: 52px;
-    background-color: rgba(0, 0, 0, 0.8);
-    z-index: 1000;
-    overflow: auto;
-  }
-  
-  .menu__links-item {
-    display: block;
-    padding: 10px 0;
-    text-align: center;
-    color: #b3c1d4;
-  }
-  .menu{
-  	width: 64vw;
-  }
-
-body{
-	margin: 0;
-}
-.wrapper{
-	display: block;
-	padding: 0;
-}
-
-.picCenter{
-	display: block;
-	object-fit: cover;
-}
-  .sideBar{
-	display: block;
-	width: 100%
-}
-
-.asideBanner{
-	padding-right: 0;
-	padding-top: 1em;
-}
-.wrap{
-	display: block;
-	width: 100%;
-	padding: 0.5em;
-}
-.newsWrap{
-display: block;
-}
-.central{
-	display: block;
-	width: 100%;
-	padding: 0;
-}
-.downsideWrap{
-	display: block;
-	padding: 0;
-}
-.lowerWrap{
-	display: block;
-}
-footer{
-	display: block;
-	text-align: center;
-}
-}
-@media screen and (min-width: 870px) {
-.menu{
-  	width: 78vw;
-  }	
-  .menu__links-item {
-    padding: 0 5px;
-  }
-
-footer{
-	display: block;
-	text-align: center;
-}
-}
-@media screen and (min-width: 1080px) {
-.menu{
-  	width: 84vw;
-  }	
-  
-}
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script> 
+     <script src="scripts/script.js"></script>  
+</body>
+<footer>
+	&#169; 2019 всі права захицені
+</footer>
