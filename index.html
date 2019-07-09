@@ -1,35 +1,249 @@
 <!DOCTYPE html>
 <html lang="uk">
 <head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta charset="utf-8">
-	<title>Page title</title>
+	<link href="styles/normalize.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+        <script src="https://use.fontawesome.com/0ca06f29a6.js"></script>
+        <link rel="shortcut icon" href="favicon.png" type="image/png">
+	<title>МЕГА - перший діловий журнал Прикарпаття</title>
 	<link rel="stylesheet" type="text/css" href="styles/style.CSS">
+
 </head>
+
+<body>
 <header>
-		<a class=header_links href="#">Home</a>
-		<a class=header_links href="/page_google/index.html">Portfolio</a>
-		<a class=header_links href="#">Services</a>
-		<a class=header_links href="/resume/index.html">About</a>
-		<a class=header_links href="battery/index.html">battery</a>
-		<a class=header_links href="/lemon/index.html">lemon</a>
-		<a class=header_links href="/page/index.html">task10</a>
-		<a class=header_links href="/landing/index.html">landing</a>
-		<a class=header_links href="/footbolki/index.html">footbolki</a>
-		<a class=header_links href="/mega/index.html">mega</a>
+<div class="container">
+	<div class="brand">MEGA</div>
+                <div class="menu">
+    <div class="menu__icon">
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+    
+    <div class="menu__links">
+        <a class="menu__links-item">НОВИНИ</a>
+        <a class="menu__links-item">ІНТЕРВ'Ю</a>
+        <a class="menu__links-item">СТАТТІ</a>
+        <a class="menu__links-item">ЖУРНАЛ</a>
+        <a class="menu__links-item">ГАЛЕРЕЯ</a>
+        <a class="menu__links-item">ЕКСПЕРТИ</a>
+        <a class="menu__links-item">ПОДІЇ</a>
+        <a class="menu__links-item">КОНТАКТИ</a>
+    </div>
+  </div>
+  </div>
+</header>
+<div class="row" >
+<a  href=""> <img class="banner" src="img/buh.png"alt=banner></a>	
+<div class="exchange"><a class="PB"></a><div id="out"></div>
+
+<script>function success(data){
+
+  data = data.find(e => e.ccy == "USD" && e.base_ccy == "UAH");
+
+  document.querySelector("#out").innerHTML = `Доллар США <br>Купівля:  ${data.buy}<br>Продаж: ${data.sale}`
+
+}</script>
+
+<script src="https://api.privatbank.ua/p24api/pubinfo?jsonp=success&exchange&coursid=5"></script>
+</div>	
+</div>
+<div class="banner-special">
+<div class="link"><a class="link" href=""><i class="euFlag"></i></a></div>
+<div class="link"><a class="link" href="#"><p>спецпроект з ЄС:</p><p>будуємо бізнес разом</a></p></div>	
+</div>
+<div class="wrapper">
+<div class="sideBar">
+<a class="asideBanner" href="https://www.flyuia.com/ua/ua/home"> <img class="newsPic" src="img/Spain.jpg"></a>
+<a class="asideBanner" href="https://www.flyuia.com/ua/ua/home"> <img class="newsPic" src="img/mapForBusiness.png"></a>
+<a class="asideBanner" href="http://mega.if.ua/arhiv.php"> <div class="titlePostLeft">ВИПУСК №20</div><img class="newsPic" src="img/magazine.jpg"></a>
+</div>
+<div class="wrap">
+<div class="centerPost">
+<h2>новина тижня. вибір редакції.</h2>
+<div class="date">24.06.2019</div>
+<div class="titlePostCenter">10 віртуальних туристичних маршрутів створять на Івано-Франківщині</div>
+<a class="picCenter" href="http://mega.if.ua/view.php?id=3271"><img class="picCenter" src="img/stone.png">
+<span class="descPostCenter">Десять віртуальних турів для мандрівників створять в Івано-Франківській області за сприяння фахівців Google. Про це повідомив начальник управління туризму Івано-Франківської обласної державної адміністрації Віталій Передерко на своїй сторінці у соціальній мережі Facebook.</span>	
+</a>	
+</div>
+<div class="newsWrap">
+	<div class="news">
+<div class="postsLeft">
+<a href="http://mega.if.ua/view.php?id=3272"><div class="titlePostLeft">НОВИНИ НА ПРИКАРПАТТІ</div></a>
+<div class="date">24.06.19</div>
+<a  href="http://mega.if.ua/view.php?id=3272"><img class="newsPicLeft" src="img/frankivsk.jpg">
+<div class="titlePost">Івано-Франківськ иоже увійти до клубу ідеальних міст Європи</div>	
+</div>
+<div class="descPost">
+	Місто Станіславів закладене на засадах, відомої в XVI-XVIII ст. європейської концепції ідеальних міст. Серед таких міст: Алба-Юлія (Румунія), Алмейда (Португалія), Неф-Брізах (Франція), Леополдов (Словакія), Замостя, Ченстохова (Польща), Жовква, Броди (Україна), Пальманова (Італія) та інші міста Європи.
+</div>
+</a>
+<div class="postsLeft">
+<div class="date">24.06.19</div>
+<a  href="http://mega.if.ua/view.php?id=3272"><img class="newsPicLeft" src="img/toronto.jpg">
+<div class="titlePost">Івано-Франківськ иоже увійти до клубу ідеальних міст Європи</div>	
+</div>
+<div class="descPost">
+	Місто Станіславів закладене на засадах, відомої в XVI-XVIII ст. європейської концепції ідеальних міст. Серед таких міст: Алба-Юлія (Румунія), Алмейда (Португалія), Неф-Брізах (Франція), Леополдов (Словакія), Замостя, Ченстохова (Польща), Жовква, Броди (Україна), Пальманова (Італія) та інші міста Європи.
+</div>
+</a>
+<div class="postsLeft">
+<div class="date">24.06.19</div>
+<a  href="http://mega.if.ua/view.php?id=3272"><img class="newsPicLeft" src="img/snail.jpg">
+<div class="titlePost">Івано-Франківськ иоже увійти до клубу ідеальних міст Європи</div>	
+</div>
+<div class="descPost">
+	Місто Станіславів закладене на засадах, відомої в XVI-XVIII ст. європейської концепції ідеальних міст. Серед таких міст: Алба-Юлія (Румунія), Алмейда (Португалія), Неф-Брізах (Франція), Леополдов (Словакія), Замостя, Ченстохова (Польща), Жовква, Броди (Україна), Пальманова (Італія) та інші міста Європи.
+</div>
+</a>
+</div>
+<div class="news">
+<div class="postsLeft">
+<a href="http://mega.if.ua/view.php?id=3272"><div class="titlePostLeft">НОВИНИ В УКРАЇНІ</div></a>
+<div class="date">24.06.19</div>
+<a  href="http://mega.if.ua/view.php?id=3272"><img class="newsPicLeft" src="img/cows.jpg">
+<div class="titlePost">Івано-Франківськ иоже увійти до клубу ідеальних міст Європи</div>	
+</div>
+<div class="descPost">
+	Місто Станіславів закладене на засадах, відомої в XVI-XVIII ст. європейської концепції ідеальних міст. Серед таких міст: Алба-Юлія (Румунія), Алмейда (Португалія), Неф-Брізах (Франція), Леополдов (Словакія), Замостя, Ченстохова (Польща), Жовква, Броди (Україна), Пальманова (Італія) та інші міста Європи.
+</div>
+</a>
+<div class="postsLeft">
+<div class="date">24.06.19</div>
+<a  href="http://mega.if.ua/view.php?id=3272"><img class="newsPicLeft" src="img/agro.jpg">
+<div class="titlePost">Івано-Франківськ иоже увійти до клубу ідеальних міст Європи</div>	
+</div>
+<div class="descPost">
+	Місто Станіславів закладене на засадах, відомої в XVI-XVIII ст. європейської концепції ідеальних міст. Серед таких міст: Алба-Юлія (Румунія), Алмейда (Португалія), Неф-Брізах (Франція), Леополдов (Словакія), Замостя, Ченстохова (Польща), Жовква, Броди (Україна), Пальманова (Італія) та інші міста Європи.
+</div>
+</a>
+<div class="postsLeft">
+<div class="date">24.06.19</div>
+<a  href="http://mega.if.ua/view.php?id=3272"><img class="newsPicLeft" src="img/frankivsk.jpg">
+<div class="titlePost">Івано-Франківськ може увійти до клубу ідеальних міст Європи</div>	
+</div>
+<div class="descPost">
+	Місто Станіславів закладене на засадах, відомої в XVI-XVIII ст. європейської концепції ідеальних міст. Серед таких міст: Алба-Юлія (Румунія), Алмейда (Португалія), Неф-Брізах (Франція), Леополдов (Словакія), Замостя, Ченстохова (Польща), Жовква, Броди (Україна), Пальманова (Італія) та інші міста Європи.
+</div>
+</a>
+</div>
+</div>
+</div>
+</div>
+<div class="central">
+<h2>ЕКСПЕРТИ</h2>
+</a>
+<div class="postsLeft">
+<div class="date">24.06.19</div>
+<a  href="http://mega.if.ua/view.php?id=3272"><img class="newsPicLeft" src="img/artysh.jpg">
+<div class="titlePost">Івано-Франківськ иоже увійти до клубу ідеальних міст Європи</div>	
+</div>
+<div class="descPost">
+	Місто Станіславів закладене на засадах, відомої в XVI-XVIII ст. європейської концепції ідеальних міст. Серед таких міст: Алба-Юлія (Румунія), Алмейда (Португалія), Неф-Брізах (Франція), Леополдов (Словакія), Замостя, Ченстохова (Польща), Жовква, Броди (Україна), Пальманова (Італія) та інші міста Європи.
+</div>
+</a>
+</div>
+<div class="central">
+<h2>ІНТЕРВ'Ю</h2>
+</a>
+<div class="postsLeft">
+<div class="date">24.06.19</div>
+<a  href="http://mega.if.ua/view.php?id=3272"><img class="newsPicLeft" src="img/singapore.jpg">
+<div class="titlePost">Івано-Франківськ може увійти до клубу ідеальних міст Європи</div>	
+</div>
+<div class="descPost">
+	Місто Станіславів закладене на засадах, відомої в XVI-XVIII ст. європейської концепції ідеальних міст. Серед таких міст: Алба-Юлія (Румунія), Алмейда (Португалія), Неф-Брізах (Франція), Леополдов (Словакія), Замостя, Ченстохова (Польща), Жовква, Броди (Україна), Пальманова (Італія) та інші міста Європи.
+</div>
+</a>
+</div>
+</div>
+<div class="downsideWrap">
 		
-		
-	</header>
-	
-<body background="images/cells.png"> 
-	<div>
-			<div class=description> <strong> Web development, UI </strong> </div>
-		<img class=main_pic src="images/body_image.png"alt="devices picture"> </div>
+	<div class="itemDownside">
+<h2>СПЕЦПРОЕКТ З ПРЕДСТАВНИЦТВОМ ЄС: БУДУЄМО БІЗНЕС РАЗОМ</h2>
+</a>
+<div class="postsLeft">
+<div class="date">24.06.19</div>
+<a  href="http://mega.if.ua/view.php?id=3272"><img class="newsPicLeft" src="img/promprylad.jpg">
+<div class="titlePost">Івано-Франківськ иоже увійти до клубу ідеальних міст Європи</div>	
+</div>
+<div class="descPost">
+	Місто Станіславів закладене на засадах, відомої в XVI-XVIII ст. європейської концепції ідеальних міст. Серед таких міст: Алба-Юлія (Румунія), Алмейда (Португалія), Неф-Брізах (Франція), Леополдов (Словакія), Замостя, Ченстохова (Польща), Жовква, Броди (Україна), Пальманова (Італія) та інші міста Європи.
+</div>
+</a>
+</div>
+<div class="itemDownside">
+<h2>СПЕЦПРОЕКТ:ЗРОБЛЕНО НА <p>ПРИКАРПАТТІ</p></h2>
+</a>
+<div class="postsLeft downsideCenter">
+<div class="date">24.06.19</div>
+<a  href="http://mega.if.ua/view.php?id=3272"><img class="newsPicLeft" src="img/mushrooms.jpg">
+<div class="titlePost">Івано-Франківськ иоже увійти до клубу ідеальних міст Європи</div>	
+</div>
+<div class="descPost">
+	Місто Станіславів закладене на засадах, відомої в XVI-XVIII ст. європейської концепції ідеальних міст. Серед таких міст: Алба-Юлія (Румунія), Алмейда (Португалія), Неф-Брізах (Франція), Леополдов (Словакія), Замостя, Ченстохова (Польща), Жовква, Броди (Україна), Пальманова (Італія) та інші міста Європи.
+</div>
+</a>
+</div>
+</div>
+</div>
+<h2>СТАТТІ</h2>
+<div class="lowerWrap">
+<div class=" downsideRight">
+<div class="date">24.06.19</div>
+<a  href="http://mega.if.ua/view.php?id=3272"><img class="newsPicLeft" src="img/toronto.jpg">
+<div class="titlePost">Івано-Франківськ иоже увійти до клубу ідеальних міст Європи</div>	
+
+<div class="descPost">
+	Місто Станіславів закладене на засадах, відомої в XVI-XVIII ст. європейської концепції ідеальних міст. Серед таких міст: Алба-Юлія (Румунія), Алмейда (Португалія), Неф-Брізах (Франція), Леополдов (Словакія), Замостя, Ченстохова (Польща), Жовква, Броди (Україна), Пальманова (Італія) та інші міста Європи.
+</div>
+</div>
+</a>
+
+<div class=" downsideRight">
+<div class="date">24.06.19</div>
+<a  href="http://mega.if.ua/view.php?id=3272"><img class="newsPicLeft" src="img/snail.jpg">
+<div class="titlePost">Івано-Франківськ иоже увійти до клубу ідеальних міст Європи</div>	
+
+<div class="descPost">
+	Місто Станіславів закладене на засадах, відомої в XVI-XVIII ст. європейської концепції ідеальних міст. Серед таких міст: Алба-Юлія (Румунія), Алмейда (Португалія), Неф-Брізах (Франція), Леополдов (Словакія), Замостя, Ченстохова (Польща), Жовква, Броди (Україна), Пальманова (Італія) та інші міста Європи.
+</div>
+</div>
+</a>
+
+<div class=" downsideRight">
+<div class="date">24.06.19</div>
+<a  href="http://mega.if.ua/view.php?id=3272"><img class="newsPicLeft" src="img/cows.jpg">
+<div class="titlePost">Івано-Франківськ иоже увійти до клубу ідеальних міст Європи</div>	
+
+<div class="descPost">
+	Місто Станіславів закладене на засадах, відомої в XVI-XVIII ст. європейської концепції ідеальних міст. Серед таких міст: Алба-Юлія (Румунія), Алмейда (Португалія), Неф-Брізах (Франція), Леополдов (Словакія), Замостя, Ченстохова (Польща), Жовква, Броди (Україна), Пальманова (Італія) та інші міста Європи.
+</div>
+</div>
+</a>
+
+<div class="postsLeft downsideRight">
+<div class="date">24.06.19</div>
+<a  href="http://mega.if.ua/view.php?id=3272"><img class="newsPicLeft" src="img/kalabuha.jpg">
+<div class="titlePost">Івано-Франківськ иоже увійти до клубу ідеальних міст Європи</div>	
+
+<div class="descPost">
+	Місто Станіславів закладене на засадах, відомої в XVI-XVIII ст. європейської концепції ідеальних міст. Серед таких міст: Алба-Юлія (Румунія), Алмейда (Португалія), Неф-Брізах (Франція), Леополдов (Словакія), Замостя, Ченстохова (Польща), Жовква, Броди (Україна), Пальманова (Італія) та інші міста Європи.
+</div>
+</div>
+</a>
+</div>
+
+<a href="https://www.facebook.com/megaifua/" >Вподобати сторінку y Facebook</a>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script> 
+     <script src="scripts/script.js"></script>  
 </body>
-	<footer>
-		<p class=footer_links>
-		<a  href="https://www.linkedin.com/feed/update/urn:li:activity:6503000467084181504">	
-		<img src="images/icons8-linkedin-filled-50.png" alt="linkedin icon"> </a> 
-		<a  href="https://www.facebook.com/profile.php?id=100000220378831"> <img src="images/icons8-facebook-filled-50.png" alt="facebook icon"> </a> 
-		</p>
-	</footer>
-</html>
+<footer>
+	&#169; 2019 всі права захицені
+</footer>
