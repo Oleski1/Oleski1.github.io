@@ -57,14 +57,24 @@ body{
 }
 
 .wrapper{
-	display: flex;
+	display: block;
 	padding-left: 2em;
 }
 .wrap{
-	display: block;
-	width: 80%;
-	padding-right: 10%;
+	display: flex;
+	padding-right: 7%;
 	padding-left: 2%;
+}
+.upsideWrap{
+	display: flex;
+	flex-direction: column;
+	width: 75%;
+}
+.centerPost{
+	display: flex;
+	flex-direction: column;
+
+	
 }
 .picCenter{
 	display: flex;
@@ -79,23 +89,23 @@ body{
 .sideBar{
 	display: flex;
 	flex-direction: column;
-	width: 20%
+	
+	
 }
 .asideBanner{
 	display: block;
+	width: 18em;
 	padding-bottom: 1em;
 	padding-right: 2em;
 }
 .newsWrap{
 	display: flex;
-	flex-direction: row;
-
+	width: 100%;
 }
 .news{
 	display: flex;
 	flex-direction: column;
-	padding: 0.5em;
-	
+	padding: 0.2em;
 }
 .brand{
 
@@ -227,6 +237,7 @@ h2{
     color: #fff;
     border-radius: 10px;
 }
+
 .date {
     position: relative;
     float: right;
@@ -267,7 +278,7 @@ h2{
 }
 .postsLeft{
 	padding-top: 20px;
-    padding-bottom: 10px;
+    
 }
 .titlePostLeft{
    text-align: center;
@@ -308,7 +319,8 @@ h2{
     text-decoration: none;
 }
 .central{
-	display: block;
+	display: flex;
+	flex-direction: column;
 	width: 100%;
 	padding: 5% 25%;
 	
@@ -338,7 +350,7 @@ padding: 0 5%;
 	display: flex;
 	flex-direction: column;
 	height: auto;
-	padding: 1em;
+	padding: 0.5em;
 }
 footer{
 	margin: 0 auto;
@@ -351,6 +363,9 @@ footer{
 	width: 100%;
 	background-color: #283d6d;
 	text-align: center;
+}
+.footerWrap{
+	
 }
 .footerDescr{
 	text-align: center;
@@ -405,6 +420,7 @@ body{
 }
 .wrapper{
 	display: block;
+	width: 100%;
 	padding: 0;
 }
 
@@ -412,22 +428,37 @@ body{
 	display: block;
 	object-fit: cover;
 }
-  .sideBar{
-	display: block;
-	width: 100%
-}
-
-.asideBanner{
-	padding-right: 0;
-	padding-top: 1em;
-}
 .wrap{
 	display: block;
 	width: 100%;
-	padding: 0.5em;
+	padding: 0.2em;
+	margin: 0 auto;
 }
+  .sideBar{
+	display: block;
+	width: 100%;
+	}
+.upsideWrap{
+	display: block;
+	width: 100%;
+}
+.centerPost{
+	display: block;
+}
+.asideBanner{
+	display: block;
+	width: 100%;
+	padding-right: 0;
+	padding-top: 1em;
+}
+
 .newsWrap{
 display: block;
+}
+.news{
+	display: block;
+	padding: 0;
+	
 }
 .central{
 	display: block;
@@ -436,6 +467,15 @@ display: block;
 }
 .downsideWrap{
 	display: block;
+	padding: 0;
+}
+.itemDownside{
+	display: block;
+	padding: 0;
+}
+.downsideRight{
+	display: block;
+	height: auto;
 	padding: 0;
 }
 .lowerWrap{
@@ -458,10 +498,13 @@ footer{
 	display: block;
 	text-align: center;
 }
+.picCenter{
+	display: block;
+	object-fit: cover;
+}
 }
 @media screen and (min-width: 1080px) {
 .menu{
-  	width: 84vw;
+  	width: 87vw;
   }	
-  
 }
