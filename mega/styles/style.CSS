@@ -112,6 +112,7 @@ body{
 	padding-left: 20px;
 	font-size: 2em;
 	color: #fff;
+	font-weight: lighter;
 }
 nav{
 	display: none;
@@ -218,7 +219,7 @@ a{
 	margin: 0 auto;
 }
 
-.h1, .h2, .h3, h1, h2, h3 {
+.h2, .h3, h1, h2, h3 {
     margin-top: 20px;
     margin-bottom: 10px;
 }
@@ -290,7 +291,7 @@ h2{
 }
 .newsPicLeft{
 	display: block;
-	object-fit: cover; 
+	object-fit: contain; 
 	background-color: white;
     border: 4px solid #BCC1BD;
     width: 100%;
@@ -364,16 +365,31 @@ footer{
 	background-color: #283d6d;
 	text-align: center;
 }
-.footerWrap{
+.socialWrap{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	padding-bottom: 1em;
+}
+.social{
+	width: 3em;
+	height: 2.5em;
 	
 }
-.footerDescr{
-	text-align: center;
+.social1{
+background: url(../img/sprite.png);	
+	background-position: -9px -24px;	
 }
-
-
+.social2{
+background: url(../img/sprite.png);	
+	background-position: -7px -88px;	
+}
+.social3{
+background: url(../img/sprite.png);	
+	background-position: -2px -158px;	
+}
 @media screen and (max-width: 870px) {
-  header{
+  	header{
   	border-radius: 0px;
   }
   .row{
