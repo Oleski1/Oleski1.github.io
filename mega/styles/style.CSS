@@ -377,15 +377,15 @@ footer{
 	
 }
 .social1{
-background: url(../img/sprite.png);	
+background: url(../img/sprite1.png);	
 	background-position: -9px -24px;	
 }
 .social2{
-background: url(../img/sprite.png);	
+background: url(../img/sprite1.png);	
 	background-position: -7px -88px;	
 }
 .social3{
-background: url(../img/sprite.png);	
+background: url(../img/sprite1.png);	
 	background-position: -2px -158px;	
 }
 @media screen and (max-width: 870px) {
